@@ -1,0 +1,32 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+media_folder: "public/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: "config"
+    label: "Config"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "Site Config"
+        file: "content/site_config.json"
+        description: "General site settings"
+        fields:
+          - label: "Site title"
+            name: "site_title"
+            widget: "string"
+          - label: "Site description"
+            name: "site_description"
+            widget: "string"
+          - label: "Popular courses"
+            name: "popular_courses"
+            widget: "list"
+            summary: "{{fields.course.course}}"
+            field:
+              label: course
+              name: course
+              widget: "string"
