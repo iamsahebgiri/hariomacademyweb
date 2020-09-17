@@ -1,7 +1,7 @@
 {
   "site_name": "Hari Om Academy",
-  "site_title": "First Digital Institute of Baripada",
-  "site_description": "Where your dreams come true",
+  "site_tagline": "First Digital Institute <br /> of Jamshedpur",
+  "site_description": "Where your dreams never come true",
   "popular_courses": [
     {
       "course": "UPSC"

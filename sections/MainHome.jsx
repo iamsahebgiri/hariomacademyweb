@@ -1,42 +1,27 @@
+/* eslint-disable react/no-danger */
 import React from 'react';
 import Link from 'next/link';
+import config from '../content/site_config.json';
 
 export default function MainHome() {
   return (
     <div className="container">
       <div className="main-home-container">
         <div className="left-section">
-          <h1>
-            First Digital Institute
-            <br />
-            of Jamshedpur
-          </h1>
-          <p className="tagline">Where your dreams come true</p>
+          <h1 dangerouslySetInnerHTML={{ __html: config.site_tagline }} />
+          <p className="tagline">{config.site_description}</p>
           <img className="underline" src="/underline.svg" alt="underline" />
           <a href="https://forms.gle/ehbndM8xZ1KMSUER6" target="_blank" rel="noopener noreferrer" className="get-started">Start Now</a>
           <div className="popular-courses-container">
             <p className="popular-courses">Popular courses:</p>
             <ul className="popular-courses-ul">
-              <li>
-                <Link href="/courses">
-                  <a href="/courses">UPSC</a>
-                </Link>
-              </li>
-              <li className="none">
-                <Link href="/courses">
-                  <a href="/courses">Banks</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/courses">
-                  <a href="/courses">JEE</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/courses">
-                  <a href="/courses">NEET</a>
-                </Link>
-              </li>
+              { config.popular_courses.map((course) => (
+                <li key={course.course}>
+                  <Link href="/courses">
+                    <a href="/courses">{course.course}</a>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
