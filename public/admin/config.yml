@@ -34,13 +34,12 @@ collections:
               name: course
               widget: "string"
           - label: "Statstics"
-            name: "stats"
+            name: "site_stats"
             widget: "list"
-            summary: "{{fields.stat.stat}}"
-            field:
-              label: stat
-              name: stat
-              widget: "string"
+            summary: "{{fields.name}} - {{fields.count}}"
+            fields:
+              - {label: Text, name: name, widget: string}
+              - {label: Count, name: count, widget: string}
   - name: "about"
     label: "About"
     delete: false
@@ -75,8 +74,15 @@ collections:
           - label: "Course"
             name: "course"
             widget: "list"
-            summary: "{{fields.course.course}}"
-            field:
-              label: course
-              name: course
-              widget: "string"
+            summary: "{{fields.name}}"
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Amount, name: amount, widget: string}
+              - {label: Period, name: peroid, widget: string}
+              - label: Features
+                name: what_will_you_get
+                widget: list
+                field:
+                  label: Feature
+                  name: feature
+                  widget: string
