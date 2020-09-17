@@ -77,8 +77,8 @@ collections:
     files:
       - name: "general"
         label: "Courses"
-        file: "content/about.json"
-        description: "Configure About Page"
+        file: "content/courses.json"
+        description: "Configure Courses Page"
         fields:
           - label: "Course"
             name: "course"
