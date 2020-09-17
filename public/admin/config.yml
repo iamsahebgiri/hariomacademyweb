@@ -36,11 +36,11 @@ collections:
           - label: "Statstics"
             name: "stats"
             widget: "list"
-            summary: "{{fields.name.name}}"
+            summary: "{{fields.stat.stat}}"
             field:
-              label: Stat
+              label: stat
               name: stat
-              widget: "object"
+              widget: "string"
   - name: "about"
     label: "About"
     delete: false
@@ -48,7 +48,7 @@ collections:
       preview: false
     files:
       - name: "general"
-        label: "Site Config"
+        label: "About"
         file: "content/about.json"
         description: "Configure About Page"
         fields:
@@ -68,15 +68,15 @@ collections:
       preview: false
     files:
       - name: "general"
-        label: "Site Config"
+        label: "Courses"
         file: "content/about.json"
         description: "Configure About Page"
         fields:
           - label: "Course"
             name: "course"
             widget: "list"
-            summary: "{{fields.name.name}}"
+            summary: "{{fields.course.course}}"
             field:
-              label: Stat
-              name: stat
-              widget: "object"
+              label: course
+              name: course
+              widget: "string"
