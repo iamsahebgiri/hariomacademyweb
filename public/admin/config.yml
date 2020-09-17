@@ -40,6 +40,15 @@ collections:
             fields:
               - {label: Text, name: name, widget: string}
               - {label: Count, name: count, widget: string}
+          - label: "Testimonials"
+            name: "site_testimonials"
+            widget: "list"
+            summary: "{{fields.name}} - {{fields.count}}"
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Avatar, name: avatar, widget: image}
+              - {label: Course, name: course, widget: string}
+              - {label: Testimonial, name: testimonial, widget: markdown}
   - name: "about"
     label: "About"
     delete: false
@@ -76,13 +85,13 @@ collections:
             widget: "list"
             summary: "{{fields.name}}"
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Amount, name: amount, widget: string}
-              - {label: Period, name: peroid, widget: string}
-              - label: Features
-                name: what_will_you_get
-                widget: list
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Amount", name: "amount", widget: "string"}
+              - {label: "Period", name: "period", widget: "string"}
+              - label: "Features"
+                name: "what_will_you_get"
+                widget: "list"
                 field:
-                  label: Feature
-                  name: feature
-                  widget: string
+                  label: "Feature"
+                  name: "feature"
+                  widget: "string"
