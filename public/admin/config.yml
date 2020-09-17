@@ -80,18 +80,9 @@ collections:
         file: "content/courses.json"
         description: "Configure Courses Page"
         fields:
-          - label: "Course"
-            name: "course"
+          - label: "Courses"
+            name: "courses"
             widget: "list"
             summary: "{{fields.name}}"
             fields:
-              - {label: "Name", name: "name", widget: "string"}
-              - {label: "Amount", name: "amount", widget: "string"}
-              - {label: "Period", name: "period", widget: "string"}
-              - label: "Features"
-                name: "what_will_you_get"
-                widget: "list"
-                field:
-                  label: "Feature"
-                  name: "feature"
-                  widget: "string"
+              - {label: Name, name: name, widget: string}
