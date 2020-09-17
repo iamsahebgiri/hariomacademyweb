@@ -17,11 +17,11 @@ export default function ReviewItem({
         </div>
         <div className="user-info-container">
           <div className="circle">
-            <img src={`/profile/${path}`} alt={name} />
+            <img src={`${path}`} alt={name} />
           </div>
           <div>
             <p>{name}</p>
-            <p>{course}</p>
+            <p className="course">{course}</p>
           </div>
         </div>
 
@@ -32,7 +32,7 @@ export default function ReviewItem({
           padding: 20px 0;
         }
         .review-item-container {
-          height: 200px;
+          height: 210px;
           background: #FFF;
           border-radius: 6px;
           box-shadow: 0 2px 4px rgba(0,0,0,0.16);
@@ -55,6 +55,9 @@ export default function ReviewItem({
         .text,p {
           color: #6B778C;
           line-height: 21px;
+        }
+        .course {
+          font-size: 0.8rem;
         }
 
         @media only screen and (max-width: 992px) {

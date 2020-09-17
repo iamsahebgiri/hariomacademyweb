@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function CourseItem({
-  img, title,
+  img, title, course,
 }) {
   return (
     <div className="course-item">
@@ -10,32 +10,24 @@ export default function CourseItem({
         <h2 className="title">{title}</h2>
         <div className="price">
           <span className="rupee">₹</span>
-          <span className="amount">40,000</span>
-          <span className="period">per year</span>
+          <span className="amount">{course.amount}</span>
+          <span className="period">{course.period}</span>
         </div>
       </div>
 
       <div className="description">
         <h2 className="what-will-you-get">What will you get</h2>
         <ul>
-          <li>
-            <svg className="tick" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-            </svg>
-            Past Year Question Paper
-          </li>
-          <li>
-            <svg className="tick" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-            </svg>
-            30 Weekly Test
-          </li>
-          <li>
-            <svg className="tick" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-            </svg>
-            PTM Every Sunday
-          </li>
+          {
+            course.what_will_you_get.map((item) => (
+              <li key={item}>
+                <svg className="tick" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                </svg>
+                {item}
+              </li>
+            ))
+          }
         </ul>
       </div>
       <style jsx>

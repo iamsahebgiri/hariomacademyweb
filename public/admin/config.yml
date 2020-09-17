@@ -6,7 +6,7 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 
 collections:
   - name: "config"
-    label: "Config"
+    label: "Site Config"
     delete: false
     editor:
       preview: false
@@ -22,6 +22,9 @@ collections:
           - label: "Site description"
             name: "site_description"
             widget: "string"
+          - label: "Message from the founder"
+            name: "message_from_founder"
+            widget: "markdown"
           - label: "Popular courses"
             name: "popular_courses"
             widget: "list"
@@ -30,3 +33,50 @@ collections:
               label: course
               name: course
               widget: "string"
+          - label: "Statstics"
+            name: "stats"
+            widget: "list"
+            summary: "{{fields.name.name}}"
+            field:
+              label: Stat
+              name: stat
+              widget: "object"
+  - name: "about"
+    label: "About"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "Site Config"
+        file: "content/about.json"
+        description: "Configure About Page"
+        fields:
+          - label: "Description"
+            name: "description"
+            widget: "markdown"
+          - label: "Mission"
+            name: "mission"
+            widget: "markdown"
+          - label: "Vision"
+            name: "vision"
+            widget: "markdown"
+  - name: "courses"
+    label: "Courses"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "Site Config"
+        file: "content/about.json"
+        description: "Configure About Page"
+        fields:
+          - label: "Course"
+            name: "course"
+            widget: "list"
+            summary: "{{fields.name.name}}"
+            field:
+              label: Stat
+              name: stat
+              widget: "object"

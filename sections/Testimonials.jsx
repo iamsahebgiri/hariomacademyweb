@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {
   Navigation, Pagination, Scrollbar, A11y,
 } from 'swiper';
+import config from '../content/site_config.json';
 import ReviewItem from '../components/ReviewItem';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
@@ -21,24 +22,16 @@ export default function Testimonials() {
         pagination={{ clickable: true, dynamicBullets: true }}
         slidesPerView={width > 922 ? 3 : 1}
       >
-        <SwiperSlide>
-          <ReviewItem
-            text="I have been reading here for last few months. The vibe and culture here is incredible. Teachers are really supportive and clears our doubt anytime. <br />
-          If you want some institute who cares for you, Hari Om Academy is the way to go."
-            name="Madhu Kumari"
-            course="Class 12"
-            path="1.jpg"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ReviewItem text="Digital Class of Hari Om Academy helps me understanding the concept so crystall clear that it stays forever. I can easily write in exam papers with ease. <br /> Hari Om Academy is one of the finest coaching institute in Jamshedpur." name="Jyoti Kumari" course="Class 12" path="5.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ReviewItem text="I was looking for a coaching which focus on all round development of student, who will take intense care of student in studies and above all they must help in excelling studies. <br />And I have never regreted choosing Hari Om academy after that." name="Akash Kumar" course="Class 12" path="4.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ReviewItem text="There are many institute in India, but not everyone of them provide quality education. I can learn, study easily and effectively." name="Shalu Kumari" course="Competition Batch" path="2.jpg" />
-        </SwiperSlide>
+        {config.site_testimonials.map((item) => (
+          <SwiperSlide key={item.name}>
+            <ReviewItem
+              text={item.testimonial}
+              name={item.name}
+              course={item.course}
+              path={item.avatar}
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
 
       <style jsx>

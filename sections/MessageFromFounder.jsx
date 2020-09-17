@@ -1,4 +1,6 @@
+/* eslint-disable react/no-danger */
 import React from 'react';
+import config from '../content/site_config.json';
 
 export default function MessageFromFounder() {
   return (
@@ -7,22 +9,7 @@ export default function MessageFromFounder() {
         <div className="section-container">
           <div className="left">
             <h1 className="title">Message from founder</h1>
-            <p>
-              Our Institute emphasize to give new embodiment in the field of education by
-              perseverance, strong mindedness to spark the whole world. Our mission to refine the
-              way of learning offers child centric-education that goes beyond the text books to open
-              the window of the mind so that each child develops holistically.
-            </p>
-
-            <p>
-              We provide a wide ranging facilities by professionals to dynamic,
-              creative learners to continue their cognitive and physical development.
-            </p>
-            <p>
-              Also we furnish a better guidance for self-improvement of student for
-              building up their future.
-            </p>
-
+            <p dangerouslySetInnerHTML={{ __html: config.message_from_founder }} />
             <p className="founder">Chandan Kumar</p>
           </div>
           <div className="right">

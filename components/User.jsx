@@ -44,7 +44,8 @@ export default function User(props) {
           color: #6B778C;
         }
         .font-weight-bold {
-          font-family: "Proxima Nova Bold";
+          font-family: "Rubik";
+          font-weight: 500;
           margin-top: 20px;
         }
         

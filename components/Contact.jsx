@@ -108,7 +108,8 @@ export default function Contact() {
           margin-bottom: 10px;
         }
         h2 {
-          font-family: 'Proxima Nova Bold';
+          font-family: 'Rubik';
+          font-weight: 500;
           font-size: 21px;
           margin-bottom: 10px;
         }

@@ -1,0 +1,146 @@
+[
+    {
+        "name": "JEE/NEET",
+        "image": "jee.png",
+        "amount":  "40,000",
+        "period": "per year",
+        "what_will_you_get": [
+            "Past Year Question Paper",
+            "30 Weekly Test",
+            "PTM Every Sunday"
+        ]
+    },
+    {
+        "name": "Railways",
+        "image": "railway.png",
+        "amount":  "8,000",
+        "period": "per course",
+        "what_will_you_get": [
+            "Past Year Question Paper",
+            "30 Weekly Test",
+            "PTM Every Sunday"
+        ]
+    },
+    {
+        "name": "Defence",
+        "image": "defence.png",
+        "amount":  "8,000",
+        "period": "per year",
+        "what_will_you_get": [
+            "Past Year Question Paper",
+            "30 Weekly Test",
+            "PTM Every Sunday"
+        ]
+    },
+    {
+        "name": "SSC",
+        "image": "ssc.png",
+        "amount":  "10,000",
+        "period": "per course",
+        "what_will_you_get": [
+            "Past Year Question Paper",
+            "30 Weekly Test",
+            "PTM Every Sunday"
+        ]
+    },
+    {
+        "name": "Banking",
+        "image": "banking.png",
+        "amount":  "12,000",
+        "period": "per year",
+        "what_will_you_get": [
+            "Past Year Question Paper",
+            "30 Weekly Test",
+            "PTM Every Sunday"
+        ]
+    },
+    {
+        "name": "DRDO",
+        "image": "drdo.png",
+        "amount":  "8,000",
+        "period": "per year",
+        "what_will_you_get": [
+            "Past Year Question Paper",
+            "30 Weekly Test",
+            "PTM Every Sunday"
+        ]
+    },
+    {
+        "name": "ITI",
+        "image": "iti.png",
+        "amount":  "8,000",
+        "period": "per year",
+        "what_will_you_get": [
+            "Past Year Question Paper",
+            "30 Weekly Test",
+            "PTM Every Sunday"
+        ]
+    },
+    {
+        "name": "Class 11",
+        "image": "cbse.png",
+        "amount":  "500",
+        "period": "per month",
+        "what_will_you_get": [
+            "Only One Subject from PCM",
+            "Past Year Question Paper",
+            "30 Weekly Test",
+            "PTM Every Sunday"
+        ]
+    },
+    {
+        "name": "Class 12",
+        "image": "cbse.png",
+        "amount":  "500",
+        "period": "per month",
+        "what_will_you_get": [
+            "Only One Subject from PCM",
+            "Past Year Question Paper",
+            "30 Weekly Test",
+            "PTM Every Sunday"
+        ]
+    },
+    {
+        "name": "Intermediate",
+        "image": "cbse.png",
+        "amount":  "10,000",
+        "period": "per year",
+        "what_will_you_get": [
+            "Past Year Question Paper",
+            "30 Weekly Test",
+            "PTM Every Sunday"
+        ]
+    },
+    {
+        "name": "Computer",
+        "image": "cs.png",
+        "amount":  "2,000",
+        "period": "per year",
+        "what_will_you_get": [
+            "Past Year Question Paper",
+            "30 Weekly Test",
+            "PTM Every Sunday"
+        ]
+    },
+    {
+        "name": "Polytechnic",
+        "image": "cs.png",
+        "amount":  "2,000",
+        "period": "per year",
+        "what_will_you_get": [
+            "Past Year Question Paper",
+            "30 Weekly Test",
+            "PTM Every Sunday"
+        ]
+    },
+    {
+        "name": "English Special Class",
+        "image": "en.png",
+        "amount":  "300",
+        "period": "per month",
+        "what_will_you_get": [
+            "Only Speak in English",
+            "PTM Every Sunday"
+        ]
+    }
+]
