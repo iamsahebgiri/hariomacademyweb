@@ -6,7 +6,7 @@ export default function CourseSection() {
   return (
     <div className="course-section">
       <div className="container">
-        {courses.map((course) => (
+        {courses.courses.map((course) => (
           <CourseItem
             course={course}
             key={course.name}

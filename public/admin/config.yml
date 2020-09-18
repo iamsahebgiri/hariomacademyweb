@@ -86,3 +86,5 @@ collections:
             summary: "{{fields.name}}"
             fields:
               - {label: Name, name: name, widget: string}
+              - {label: Amount, name: amount, widget: string}
+              - {label: Period, name: period, widget: string}
