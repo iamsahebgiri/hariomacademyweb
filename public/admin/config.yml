@@ -110,15 +110,15 @@ collections:
             widget: "list"
             summary: "{{fields.name}}"
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: "Monthly Price", name: monthly_price, widget: string}
-              - {label: "Yearly Price", name: annually_price, widget: string}
-              - {label: Icon, name: image, widget: image, default: "images/uploads/test_default.png"}
-              - label: Features
-                name: what_will_you_get
-                widget: list
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Monthly Price", name: "monthly_price", widget: "string"}
+              - {label: "Yearly Price", name: "annually_price", widget: "string"}
+              - {label: "Icon", name: "image", widget: "image", default: "images/uploads/test_default.png"}
+              - label: "Features"
+                name: "what_will_you_get"
+                widget: "list"
                 fields:
-                  - {label: Feature, name: feature, widget: string}
+                  - {label: "Feature", name: "feature", widget: "string"}
   - name: "faculties"
     label: "Faculties"
     delete: false
@@ -138,7 +138,6 @@ collections:
               - {label: Name, name: name, widget: string}
               - {label: Designation, name: designation, widget: string}
               - {label: Email, name: email, widget: string}
-              - {label: Image, name: image, widget: image}
               - {label: Image, name: image, widget: image}
               - {label: Color, name: color, widget: string}
   - name: "gallery"
