@@ -112,7 +112,7 @@ collections:
             fields:
               - {label: Name, name: name, widget: string}
               - {label: "Monthly Price", name: monthly_price, widget: string}
-              - {label: "Monthly Price", name: annually_price, widget: string}
+              - {label: "Yearly Price", name: annually_price, widget: string}
               - {label: Icon, name: image, widget: image, default: "images/uploads/test_default.png"}
               - label: Features
                 name: what_will_you_get
