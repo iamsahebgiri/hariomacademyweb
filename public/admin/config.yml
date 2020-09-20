@@ -171,7 +171,7 @@ collections:
           - label: "Contacts"
             name: "contacts"
             widget: "list"
-            summary: "{{fields.image}}"
+            summary: "{{fields.campus_name}}"
             fields:
               - {label: "Campus Name", name: campus_name, widget: string}
               - {label: "Whatsapp No", name: whatsapp_no, widget: string}
