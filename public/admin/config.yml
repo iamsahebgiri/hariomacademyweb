@@ -88,3 +88,26 @@ collections:
               - {label: Name, name: name, widget: string}
               - {label: Amount, name: amount, widget: string}
               - {label: Period, name: period, widget: string}
+              - {label: Icon, name: image, widget: image}
+              - label: Features
+                name: what_will_you_get
+                widget: object
+                fields:
+                  - {label: Feature, name: feature, widget: string}
+  - name: "gallery"
+    label: "Gallery"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "Gallery"
+        file: "content/gallery.json"
+        description: "Configure Gallery Page"
+        fields:
+          - label: "Gallery"
+            name: "gallery"
+            widget: "list"
+            summary: "{{fields.image}}"
+            fields:
+              - {label: Image, name: image, widget: image}

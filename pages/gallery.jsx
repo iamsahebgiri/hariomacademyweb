@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import Jumbotron from '../components/Jumbotron';
 import Footer from '../components/Footer';
+import images from '../content/gallery.json';
 
 export default function gallery() {
   return (
@@ -15,32 +16,9 @@ export default function gallery() {
       <Header />
       <Jumbotron title="Our Gallery" description="Capturing every happy moments." />
       <div className="container">
-
-        <img src="/1.jpg" alt="Hari om Academy" />
-
-        <img src="/2.jpg" alt="Hari om Academy" />
-
-        <img src="/3.jpg" alt="Hari om Academy" />
-
-        <img src="/4.jpg" alt="Hari om Academy" />
-
-        <img src="/5.jpg" alt="Hari om Academy" />
-
-        <img src="/6.jpg" alt="Hari om Academy" />
-
-        <img src="/7.jpg" alt="Hari om Academy" />
-
-        <img src="/8.jpg" alt="Hari om Academy" />
-
-        <img src="/9.jpg" alt="Hari om Academy" />
-
-        <img src="/10.jpg" alt="Hari om Academy" />
-
-        <img src="/11.jpg" alt="Hari om Academy" />
-
-        <img src="/12.jpg" alt="Hari om Academy" />
-
-        <img src="/13.jpg" alt="Hari om Academy" />
+        {
+          images.gallery.map((image) => <img key={image.imgage} src={image.image} alt="Hari om Academy" />)
+        }
       </div>
 
       <Footer />

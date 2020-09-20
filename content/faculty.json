@@ -1,0 +1,137 @@
+{
+    "faculties": [
+        {
+            "name": "Chandan Kumar",
+            "designation": "CEO & Founder",
+            "email": "chandankumar@hariomacademy.com",
+            "image": "/images/uploads/ck.jpg",
+            "color": "#311d3f"
+        },
+        {
+            "name": "Shailendra Kumar",
+            "designation": "M.Sc. & B.Ed.",
+            "email": "",
+            "image": "/images/uploads/shailendra.jpg",
+            "color": "#311d3f"
+        },
+        {
+            "name": "Manish Kumar Singh",
+            "designation": "MBA",
+            "email": "",
+            "image": "/images/uploads/manish.jpg",
+            "color": "#311d3f"
+        },
+        {
+            "name": "Anupama Kumari",
+            "designation": "M.Sc.",
+            "email": "anupamakumari@hariomacademy.com",
+            "image": "/images/uploads/anupama.jpg",
+            "color": "#311d3f"
+        },
+        {
+            "name": "Aarti Kumari",
+            "designation": "M.Sc.",
+            "email": "aartikumari@hariomacademy.com",
+            "image": "/images/uploads/ak.jpg",
+            "color": "#311d3f"
+        },
+        {
+            "name": "Krishna Singh",
+            "designation": "B.Tech",
+            "email": "krishnasingh@hariomacademy.com",
+            "image": "/images/uploads/krishna_singh.jpg",
+            "color": "#311d3f"
+        },
+        {
+            "name": "Sashi Bhusan Sharma",
+            "designation": "M.Com",
+            "email": "",
+            "image": "/images/uploads/s_bhusan.jpg",
+            "color": "#311d3f"
+        },
+        {
+            "name": "Sonal Kumari",
+            "designation": "M.Com",
+            "email": "",
+            "image": "/images/uploads/sonal_kumari.jpg",
+            "color": "#311d3f"
+        },
+        {
+            "name": "Rani Kumari",
+            "designation": "M.Com",
+            "email": "",
+            "image": "/images/uploads/rani_kumari.jpg",
+            "color": "#311d3f"
+        },
+        {
+            "name": "Roshan Kumar",
+            "designation": "BCA",
+            "email": "",
+            "image": "/images/uploads/shalu.jpg",
+            "color": "#311d3f"
+        },
+        {
+            "name": "Shri Tiu",
+            "designation": "Assistant Teacher",
+            "email": "",
+            "image": "/images/uploads/shri.jpg",
+            "color": "#311d3f"
+        },
+        {
+            "name": "Mohit Nishant",
+            "designation": "Assistant Teacher",
+            "email": "",
+            "image": "/images/uploads/nishant.jpg",
+            "color": "#311d3f"
+        },
+        {
+            "name": "Sunil Kumar",
+            "designation": "Assistant Teacher",
+            "email": "",
+            "image": "/images/uploads/sunil_kumar.jpg",
+            "color": "#311d3f"
+        },
+        {
+            "name": "Nidhi Kumari",
+            "designation": "Assistant Teacher",
+            "email": "",
+            "image": "/images/uploads/nidhi_kumari.jpg",
+            "color": "#311d3f"
+        },
+        {
+            "name": "Nidhi Kumari",
+            "designation": "Assistant Teacher",
+            "email": "",
+            "image": "/images/uploads/nidhi_kumari_diff.jpg",
+            "color": "#311d3f"
+        },
+        {
+            "name": "Shilpy kumari",
+            "designation": "Assistant Teacher",
+            "email": "",
+            "image": "/images/uploads/shilpy.jpg",
+            "color": "#311d3f"
+        },
+        {
+            "name": "Archana kumari",
+            "designation": "Assistant Teacher",
+            "email": "",
+            "image": "/images/uploads/archana.jpg",
+            "color": "#311d3f"
+        },
+        {
+            "name": "Soni kumari",
+            "designation": "Assistant Teacher",
+            "email": "",
+            "image": "/images/uploads/soni.jpg",
+            "color": "#311d3f"
+        },
+        {
+            "name": "Rahul Mahato",
+            "designation": "Assistant Teacher",
+            "email": "rahul25mahato@gmail.com",
+            "image": "/images/uploads/rahul.jpg",
+            "color": "#311d3f"
+        }
+    ]
+}

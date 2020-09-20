@@ -2,7 +2,7 @@
     "courses": [
         {
             "name": "JEE/NEET",
-            "image": "jee.png",
+            "image": "images/uploads/jee.png",
             "amount":  "40,000",
             "period": "per year",
             "what_will_you_get": [
@@ -13,7 +13,7 @@
         },
         {
             "name": "Railways",
-            "image": "railway.png",
+            "image": "images/uploads/railway.png",
             "amount":  "8,000",
             "period": "per course",
             "what_will_you_get": [
@@ -24,7 +24,7 @@
         },
         {
             "name": "Defence",
-            "image": "defence.png",
+            "image": "images/uploads/defence.png",
             "amount":  "8,000",
             "period": "per year",
             "what_will_you_get": [
@@ -35,7 +35,7 @@
         },
         {
             "name": "SSC",
-            "image": "ssc.png",
+            "image": "images/uploads/ssc.png",
             "amount":  "10,000",
             "period": "per course",
             "what_will_you_get": [
@@ -46,7 +46,7 @@
         },
         {
             "name": "Banking",
-            "image": "banking.png",
+            "image": "images/uploads/banking.png",
             "amount":  "12,000",
             "period": "per year",
             "what_will_you_get": [
@@ -57,7 +57,7 @@
         },
         {
             "name": "DRDO",
-            "image": "drdo.png",
+            "image": "images/uploads/drdo.png",
             "amount":  "8,000",
             "period": "per year",
             "what_will_you_get": [
@@ -68,7 +68,7 @@
         },
         {
             "name": "ITI",
-            "image": "iti.png",
+            "image": "images/uploads/iti.png",
             "amount":  "8,000",
             "period": "per year",
             "what_will_you_get": [
@@ -79,7 +79,7 @@
         },
         {
             "name": "Class 11",
-            "image": "cbse.png",
+            "image": "images/uploads/cbse.png",
             "amount":  "500",
             "period": "per month",
             "what_will_you_get": [
@@ -91,7 +91,7 @@
         },
         {
             "name": "Class 12",
-            "image": "cbse.png",
+            "image": "images/uploads/cbse.png",
             "amount":  "500",
             "period": "per month",
             "what_will_you_get": [
@@ -103,7 +103,7 @@
         },
         {
             "name": "Intermediate",
-            "image": "cbse.png",
+            "image": "images/uploads/cbse.png",
             "amount":  "10,000",
             "period": "per year",
             "what_will_you_get": [
@@ -114,7 +114,7 @@
         },
         {
             "name": "Computer",
-            "image": "cs.png",
+            "image": "images/uploads/cs.png",
             "amount":  "2,000",
             "period": "per year",
             "what_will_you_get": [
@@ -125,7 +125,7 @@
         },
         {
             "name": "Polytechnic",
-            "image": "cs.png",
+            "image": "images/uploads/cs.png",
             "amount":  "2,000",
             "period": "per year",
             "what_will_you_get": [
@@ -136,7 +136,7 @@
         },
         {
             "name": "English Special Class",
-            "image": "en.png",
+            "image": "images/uploads/en.png",
             "amount":  "300",
             "period": "per month",
             "what_will_you_get": [

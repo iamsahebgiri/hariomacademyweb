@@ -76,20 +76,19 @@ export default function Contact() {
         {`
         .container {
           max-width: 1200px;
-          margin: 0 auto;
+          margin: 23px auto;
           display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-          justify-items: center;
+          grid-template-columns: 380px 380px 380px;
           grid-gap: 20px;
-          padding: 20px 0;
+          justify-items: center;
           color: #172B4D;
         }
         .box {
-          box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+          box-shadow: 0 1px 2px rgba(0,0,0,0.12);
           border-radius: 6px;
           padding: 20px;
           background: #fff;
-          width: 300px;
+          width: 90%;
         }
         a {
           display: block;
