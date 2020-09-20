@@ -9,7 +9,7 @@ export default function CourseSection() {
         {courses.courses.map((course) => (
           <CourseItem
             amount={course.amount}
-            period={course.amount}
+            period={course.period}
             course={course}
             key={course.name}
             img={course.image}
