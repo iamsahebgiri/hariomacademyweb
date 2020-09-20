@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
+import clsx from 'clsx';
 import Header from '../components/Header';
 import Jumbotron from '../components/Jumbotron';
 import Footer from '../components/Footer';
+import CourseItem from '../components/CourseItem';
+import testSeries from '../content/test_series.json';
 
 export default function fees() {
+  const [monthly, setMonthly] = useState(false);
   return (
     <div>
       <Head>
@@ -18,84 +22,83 @@ export default function fees() {
         description="Learn, Test, Sleep, Repeat."
       />
       <div className="container">
-        <table>
-          <tbody>
-            <tr>
-              <th>Courses</th>
-              <th>Prices</th>
-            </tr>
-
-            <tr>
-              <td>Class 10 CBSE</td>
-              <td>Rs. 150/Month or Rs. 1500/Year</td>
-            </tr>
-            <tr>
-              <td>Class 10 JAC</td>
-              <td>Rs. 100/Month or Rs. 1000/Year</td>
-            </tr>
-            <tr>
-              <td>Inter. CBSE</td>
-              <td>Rs. 250/Month or Rs. 2500/Year</td>
-            </tr>
-            <tr>
-              <td>Inter. JAC</td>
-              <td>Rs. 200/Month or Rs. 2000/Year</td>
-            </tr>
-            <tr>
-              <td>I.Com.</td>
-              <td>Rs. 200/Month or Rs. 2000/Year</td>
-            </tr>
-            <tr>
-              <td>I.A.</td>
-              <td>Rs. 100/Month or Rs. 1000/Year</td>
-            </tr>
-            <tr>
-              <td>S.S.C.</td>
-              <td>Rs. 100/Month or Rs. 1000/Year</td>
-            </tr>
-            <tr>
-              <td>Railways</td>
-              <td>Rs. 100/Month or Rs. 1000/Year</td>
-            </tr>
-            <tr>
-              <td>Bank</td>
-              <td>Rs. 100/Month or Rs. 1000/Year</td>
-            </tr>
-            <tr>
-              <td>NDA</td>
-              <td>Rs. 200/Month or Rs. 2000/Year</td>
-            </tr>
-            <tr>
-              <td>CDS</td>
-              <td>Rs. 200/Month or Rs. 2000/Year</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div className="note">
-          <b>Note: </b>
-          <ol>
-            <li>All Subjects are included in this package.</li>
-            <li>
-              Test occurs once in a week and daily prior to annual examination
-              for whole month.
-            </li>
-          </ol>
+        <div className="segmented-buttons-container">
+          <div className="buttons-container">
+            <button className={clsx('reset-button', !monthly && 'active')} type="button" onClick={() => setMonthly(false)}>Monthly</button>
+            <button
+              className={clsx('reset-button', monthly && 'active')}
+              type="button"
+              onClick={() => setMonthly(true)}
+            >
+              Yearly
+            </button>
+          </div>
         </div>
-      </div>
+        <div className="container-center">
+          <div className="container-series">
+            {testSeries.test_series.map((series) => (
+              <CourseItem
+                course={series}
+                amount={monthly === false ? series.monthly_price : series.annually_price}
+                period={monthly === false ? 'per month' : 'per year'}
+                key={series.name}
+                img={series.image}
+                title={series.name}
+              />
+            ))}
+          </div>
+        </div>
 
-      <Footer />
+        <Footer />
+
+      </div>
       <style jsx>
         {`
           .container {
-            background: #fff;
-            max-width: 1200px;
-            margin: 30px auto;
-            padding: 10px;
-            overflow-x: auto;
-            color: #172b4d;
+            background: #FFF;
+          }
+          .container-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .segmented-buttons-container {
+            padding: 30px 0 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .reset-button {
+            border: none;
+            outline: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            color: #000;
+            padding: 10px 28px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-family: "Rubik";
+            font-weight: bold;
             border-radius: 6px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+            background: #e2e8f0;
+          }
+          .buttons-container {
+            background: #e2e8f0;
+            border-radius: 6px;
+            padding: 3px;
+          }
+          .active {
+            background-color: #fff;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.12);
+          }
+          .container-series {
+            margin: 0 auto;
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(4, 300px);
+            grid-gap: 1rem;
           }
           img {
             max-height: 500px;

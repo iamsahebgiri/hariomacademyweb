@@ -113,10 +113,16 @@ export default function Contact() {
           margin-bottom: 10px;
         }
         @media only screen and (max-width: 992px) { 
+          .container {
+            grid-template-columns: 320px;
+            grid-gap: 10px;
+            margin: 16px;
+          }
           .box {
             border: 1px solid #EFF2F7;
             box-shadow: none;
             border-radius: 6px;
+            margin: 0 auto;
           }
         }
         `}

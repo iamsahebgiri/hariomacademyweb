@@ -7,6 +7,7 @@ export default function MainHome() {
   return (
     <div className="container">
       <div className="main-home-container">
+        {/* <img className="mob-girl" width="320" src="/girl.png" alt="girl" /> */}
         <div className="left-section">
           <h1 dangerouslySetInnerHTML={{ __html: config.site_tagline }} />
           <p className="tagline">{config.site_description}</p>
@@ -103,29 +104,42 @@ export default function MainHome() {
         @media only screen and (max-width: 992px) { 
           .main-home-container {
             flex-direction: column;
-            padding: 50px 20px;
+            padding: 50px 20px 0 20px;
+          }
+          .left-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .left-section h1 {
+            font-size: 34px;
+            line-height: 40px;
+            text-align: center;
           }
           .right-section {
             display: flex;
             justify-content: center;
           }
           .right-section img {
-            display:none;
-          }
-          h1 {
-            font-size: 34px;
-            line-height: 40px;
-            text-align: left;
+            // display: none;
+            width: 300px;
           }
           .tagline {
             font-size: 15px;
+            text-align: center;
           }
           .get-started {
             width: 100%;
-            margin-top: 60px;
+            border-radius: 6px;
+            padding: 12px;
+            text-transform: uppercase;
+            margin-top: 30px;
           }
           .underline {
             display: none;
+          }
+          .popular-courses-container {
+            margin-bottom: 30px;
           }
           .popular-courses. .popular-courses-ul li a {
             font-size: 14px;

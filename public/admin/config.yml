@@ -91,9 +91,56 @@ collections:
               - {label: Icon, name: image, widget: image}
               - label: Features
                 name: what_will_you_get
-                widget: object
+                widget: list
                 fields:
                   - {label: Feature, name: feature, widget: string}
+  - name: "test_series"
+    label: "Test Series"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "Test Series"
+        file: "content/test_series.json"
+        description: "Configure Test Series Page"
+        fields:
+          - label: "Test Series"
+            name: "test_series"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: "Monthly Price", name: monthly_price, widget: string}
+              - {label: "Monthly Price", name: annually_price, widget: string}
+              - {label: Icon, name: image, widget: image, default: "images/uploads/test_default.png"}
+              - label: Features
+                name: what_will_you_get
+                widget: list
+                fields:
+                  - {label: Feature, name: feature, widget: string}
+  - name: "faculties"
+    label: "Faculties"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "Faculties"
+        file: "content/faculty.json"
+        description: "Configure Faculties Page"
+        fields:
+          - label: "Faculties"
+            name: "faculties"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Designation, name: designation, widget: string}
+              - {label: Email, name: email, widget: string}
+              - {label: Image, name: image, widget: image}
+              - {label: Image, name: image, widget: image}
+              - {label: Color, name: color, widget: string}
   - name: "gallery"
     label: "Gallery"
     delete: false

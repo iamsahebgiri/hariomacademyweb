@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function CourseItem({
-  img, title, course,
+  img, title, course, amount, period,
 }) {
   return (
     <div className="course-item">
@@ -10,8 +10,8 @@ export default function CourseItem({
         <h2 className="title">{title}</h2>
         <div className="price">
           <span className="rupee">₹</span>
-          <span className="amount">{course.amount}</span>
-          <span className="period">{course.period}</span>
+          <span className="amount">{amount}</span>
+          <span className="period">{period}</span>
         </div>
       </div>
 

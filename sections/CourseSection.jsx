@@ -8,6 +8,8 @@ export default function CourseSection() {
       <div className="container">
         {courses.courses.map((course) => (
           <CourseItem
+            amount={course.amount}
+            period={course.amount}
             course={course}
             key={course.name}
             img={course.image}
@@ -17,13 +19,19 @@ export default function CourseSection() {
       </div>
       <style jsx>
         {`
+          .course-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #FFF;
+          }
           .container {
             margin: 0 auto;
             padding: 40px;
             display: grid;
             grid-template-columns: repeat(4, 300px);
             grid-gap: 1rem;
-            background: #FFF;
+            
           }
           .load {
             padding: 10px 20px;

@@ -1,0 +1,114 @@
+{
+    "test_series": [
+        {
+            "name": "Class 10 CBSE",
+            "image": "images/uploads/test_default.png",
+            "monthly_price":  "150",
+            "annually_price": "1500",
+            "what_will_you_get": [
+                "Once in a week",
+                "Daily before Exam",
+                "Get Scorecard"
+            ]
+        },
+        {
+            "name": "Class 10 JAC",
+            "image": "images/uploads/test_default.png",
+            "monthly_price":  "100",
+            "annually_price": "1000",
+            "what_will_you_get": [
+                "Once in a week",
+                "Daily before Exam",
+                "Get Scorecard"
+            ]
+        },
+        {
+            "name": "Inter. CBSE",
+            "image": "images/uploads/test_default.png",
+            "monthly_price":  "250",
+            "annually_price": "2500",
+            "what_will_you_get": [
+                "Once in a week",
+                "Daily before Exam",
+                "Get Scorecard"
+            ]
+        },
+        {
+            "name": "Inter. JAC",
+            "image": "images/uploads/test_default.png",
+            "monthly_price":  "200",
+            "annually_price": "2000",
+            "what_will_you_get": [
+                "Once in a week",
+                "Daily before Exam",
+                "Get Scorecard"
+            ]
+        },
+        {
+            "name": "I.A.",
+            "image": "images/uploads/test_default.png",
+            "monthly_price":  "100",
+            "annually_price": "1000",
+            "what_will_you_get": [
+                "Once in a week",
+                "Daily before Exam",
+                "Get Scorecard"
+            ]
+        },
+        {
+            "name": "S.S.C.",
+            "image": "images/uploads/test_default.png",
+            "monthly_price":  "100",
+            "annually_price": "1000",
+            "what_will_you_get": [
+                "Once in a week",
+                "Daily before Exam",
+                "Get Scorecard"
+            ]
+        },
+        {
+            "name": "Railways",
+            "image": "images/uploads/test_default.png",
+            "monthly_price":  "100",
+            "annually_price": "1000",
+            "what_will_you_get": [
+                "Once in a week",
+                "Daily before Exam",
+                "Get Scorecard"
+            ]
+        },
+        {
+            "name": "Banking",
+            "image": "images/uploads/test_default.png",
+            "monthly_price":  "100",
+            "annually_price": "1000",
+            "what_will_you_get": [
+                "Once in a week",
+                "Daily before Exam",
+                "Get Scorecard"
+            ]
+        },
+        {
+            "name": "NDA",
+            "image": "images/uploads/test_default.png",
+            "monthly_price":  "200",
+            "annually_price": "2000",
+            "what_will_you_get": [
+                "Once in a week",
+                "Daily before Exam",
+                "Get Scorecard"
+            ]
+        },
+        {
+            "name": "CDS",
+            "image": "images/uploads/test_default.png",
+            "monthly_price":  "200",
+            "annually_price": "2000",
+            "what_will_you_get": [
+                "Once in a week",
+                "Daily before Exam",
+                "Get Scorecard"
+            ]
+        }
+    ]
+}
