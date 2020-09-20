@@ -157,3 +157,22 @@ collections:
             summary: "{{fields.image}}"
             fields:
               - {label: Image, name: image, widget: image}
+  - name: "contacts"
+    label: "contacts"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "Contacts"
+        file: "content/contacts.json"
+        description: "Configure Contacts Page"
+        fields:
+          - label: "Contacts"
+            name: "contacts"
+            widget: "list"
+            summary: "{{fields.image}}"
+            fields:
+              - {label: "Campus Name", name: campus_name, widget: string}
+              - {label: "Whatsapp No", name: whatsapp_no, widget: string}
+              - {label: "Address", name: address, widget: markdown}

@@ -133,11 +133,11 @@ export default function fees() {
             background-color: #f4f5f7;
           }
           @media only screen and (max-width: 992px) {
-            .container {
-              margin: 10px;
-              border: 1px solid #eff2f7;
-              box-shadow: none;
-              border-radius: 6px;
+            .container-series {
+              justify-content: center;
+              grid-template-columns: repeat(1, 300px);
+              grid-gap: 2rem;
+              padding: 10px;
             }
           }
         `}
