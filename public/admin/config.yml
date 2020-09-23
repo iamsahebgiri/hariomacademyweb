@@ -15,7 +15,7 @@ collections:
         label: 'Site Config'
         file: 'content/site_config.json'
         description: 'General site settings'
-        field:
+        fields:
           - label: 'Site title'
             name: 'site_title'
             widget: 'string'
@@ -59,7 +59,7 @@ collections:
         label: 'About'
         file: 'content/about.json'
         description: 'Configure About Page'
-        field:
+        fields:
           - label: 'Description'
             name: 'description'
             widget: 'markdown'
@@ -79,7 +79,7 @@ collections:
         label: 'Courses'
         file: 'content/courses.json'
         description: 'Configure Courses Page'
-        field:
+        fields:
           - label: 'Courses'
             name: 'courses'
             widget: 'list'
@@ -104,7 +104,7 @@ collections:
         label: 'Test Series'
         file: 'content/test_series.json'
         description: 'Configure Test Series Page'
-        field:
+        fields:
           - label: 'Test Series'
             name: 'test_series'
             widget: 'list'
@@ -142,7 +142,7 @@ collections:
         label: 'Faculties'
         file: 'content/faculty.json'
         description: 'Configure Faculties Page'
-        field:
+        fields:
           - label: 'Faculties'
             name: 'faculties'
             widget: 'list'
@@ -163,7 +163,7 @@ collections:
         label: 'Gallery'
         file: 'content/gallery.json'
         description: 'Configure Gallery Page'
-        field:
+        fields:
           - label: 'Gallery'
             name: 'gallery'
             widget: 'list'
@@ -180,7 +180,7 @@ collections:
         label: 'Contacts'
         file: 'content/contacts.json'
         description: 'Configure Contacts Page'
-        field:
+        fields:
           - label: 'Contacts'
             name: 'contacts'
             widget: 'list'
