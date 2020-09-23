@@ -29,7 +29,10 @@ collections:
             name: "popular_courses"
             widget: "list"
             summary: "{{fields.course.course}}"
-            fields: { label: Course, name: course, widget: "string" }
+            field:
+              label: course
+              name: course
+              widget: "string"
           - label: "Statstics"
             name: "site_stats"
             widget: "list"
