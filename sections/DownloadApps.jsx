@@ -37,6 +37,7 @@ export default function DownloadApps() {
           font-weight: 500;
           font-size: 36px;
           color: #172B4D;
+          line-height: 40px;
         }
         
         .description {

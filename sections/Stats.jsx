@@ -25,6 +25,7 @@ export default function Stats() {
             font-weight: 500;
             font-size: 36px;
             color: #172B4D;
+            line-height: 40px;
           }
           .title {
             margin: 30px 0 50px 0;

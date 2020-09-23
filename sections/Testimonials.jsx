@@ -43,6 +43,7 @@ export default function Testimonials() {
         color: #172B4D;
         text-align: center;
         padding: 40px 0;
+        line-height: 40px;
       }
       .testimpnials-container {
         max-width: 1200px;

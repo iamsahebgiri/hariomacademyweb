@@ -21,6 +21,7 @@ export default function MessageFromFounder() {
         {`
       .title {
         font-size: 36px;
+        line-height: 40px;
         font-family: 'Rubik';
         font-weight: 500;
         color: #172B4D;
