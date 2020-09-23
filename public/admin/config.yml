@@ -86,7 +86,11 @@ collections:
               - {label: Amount, name: amount, widget: string}
               - {label: Period, name: period, widget: string}
               - {label: Icon, name: image, widget: image}
-              - {label: Features, name: what_will_you_get, widget: object, fields: - {label: Feature, name: feature, widget: string}}
+              - label: Features
+                name: what_will_you_get
+                widget: object
+                fields:
+                  - {label: Feature, name: feature, widget: string}
   - name: "test_series"
     label: "Test Series"
     delete: false
