@@ -92,7 +92,7 @@ collections:
               - label: Features
                 name: what_will_you_get
                 widget: object
-                fields:
+                field:
                   - {label: Feature, name: feature, widget: string}
   - name: "test_series"
     label: "Test Series"
