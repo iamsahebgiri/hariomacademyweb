@@ -67,6 +67,13 @@
             "name": "Roshan Kumar",
             "designation": "BCA",
             "email": "",
+            "image": "/images/uploads/rk.jpg",
+            "color": "#311d3f"
+        },
+        {
+            "name": "Shalu Kumari",
+            "designation": "BCA",
+            "email": "",
             "image": "/images/uploads/shalu.jpg",
             "color": "#311d3f"
         },
@@ -124,13 +131,6 @@
             "designation": "Assistant Teacher",
             "email": "",
             "image": "/images/uploads/soni.jpg",
-            "color": "#311d3f"
-        },
-        {
-            "name": "Rahul Mahato",
-            "designation": "Assistant Teacher",
-            "email": "rahul25mahato@gmail.com",
-            "image": "/images/uploads/rahul.jpg",
             "color": "#311d3f"
         }
     ]

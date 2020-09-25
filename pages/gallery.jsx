@@ -11,13 +11,12 @@ export default function gallery() {
       <Head>
         <title>Our Gallery | Hari Om Academy</title>
         <link rel="icon" href="/logo.png" sizes="16x16 32x32" type="image/png" />
-        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js" />
       </Head>
       <Header />
       <Jumbotron title="Our Gallery" description="Capturing every happy moments." />
       <div className="container">
         {
-          images.gallery.map((image) => <img key={image.imgage} src={image.image} alt="Hari om Academy" />)
+          images.gallery.map((image) => <img key={image.id} src={image.path} alt="Hari om Academy" />)
         }
       </div>
 
