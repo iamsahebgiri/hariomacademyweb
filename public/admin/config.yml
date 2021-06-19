@@ -4,9 +4,12 @@ backend:
 media_folder: "public/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
+local_backend: true
+
 collections:
   - name: "config"
-    label: "Site Config"
+    label: "Landing Page"
+    description: "Change your landing page content such as testimonials, message from founder, etc."
     delete: false
     editor:
       preview: false
@@ -14,7 +17,7 @@ collections:
       - name: "general"
         label: "Site Config"
         file: "content/site_config.json"
-        description: "General site settings"
+        description: "General site settings"  
         fields:
           - label: "Site title"
             name: "site_title"
@@ -43,14 +46,15 @@ collections:
           - label: "Testimonials"
             name: "site_testimonials"
             widget: "list"
-            summary: "{{fields.name}} - {{fields.count}}"
+            summary: "{{fields.name}} - {{fields.course}}"
             fields:
               - {label: Name, name: name, widget: string}
               - {label: Avatar, name: avatar, widget: image}
               - {label: Course, name: course, widget: string}
               - {label: Testimonial, name: testimonial, widget: markdown}
   - name: "about"
-    label: "About"
+    label: "About Page"
+    description: "Change your about page content such as description, vision, mission, etc."
     delete: false
     editor:
       preview: false
@@ -70,7 +74,8 @@ collections:
             name: "vision"
             widget: "markdown"
   - name: "courses"
-    label: "Courses"
+    label: "Courses Page"
+    description: "Modify all courses as you wish"
     delete: false
     editor:
       preview: false
@@ -91,9 +96,7 @@ collections:
               - {label: Icon, name: image, widget: image}
               - label: Features
                 name: what_will_you_get
-                widget: object
-                field:
-                  - {label: Feature, name: feature, widget: string}
+                widget: list
   - name: "test_series"
     label: "Test Series"
     delete: false
@@ -116,9 +119,7 @@ collections:
               - {label: "Icon", name: "image", widget: "image", default: "images/uploads/test_default.png"}
               - label: "Features"
                 name: "what_will_you_get"
-                widget: "object"
-                fields:
-                  - {label: "Feature", name: "feature", widget: "string"}
+                widget: "list"
   - name: "faculties"
     label: "Faculties"
     delete: false
